@@ -1,0 +1,225 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'opensans';
+    src: url('font/Open_Sans/OpenSans-VariableFont_wdth_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'rileway';
+    src: url('font/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+:root{
+    --escuro: #010326;
+    --menosescuro: #393E59;
+    --neutro: #F0F2F2;
+    --claro: #6FBFBF;
+    --maisclaro: #82D9D9;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--neutro);
+    font-family: 'opensans', Helvetica, sans-serif;
+}
+header{
+    background-color: #fff;
+    height: 33vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    box-shadow: 0px 3px 2px #8d8d8dc4;
+}
+.h2maior{
+    line-height: 70%;
+}
+.h2menor{
+    font-size: 0.4em;
+    font-weight: 300;
+}
+.content{
+    justify-content: center;
+    align-items: top;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+.bem_vindo{
+    background-color: var(--menosescuro);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.pmaior{
+    font-size: 2.1rem;
+    text-align: center;
+    width: 70vw;
+    line-height: 104%;
+    font-weight: bold;
+    color: var(--neutro);
+}
+.pmenor{
+    font-size: 0.9rem;
+}
+.linkbem{
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    height: 2.4rem;
+    width: 200px;
+    margin-top: 0.7rem;
+    background-color: var(--escuro);
+    box-shadow: 0px 3px 3px #202333;
+}
+#conteudo2{
+    padding-top: 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.enalte{
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 320px;
+}
+.imagis{
+    height: 215px;
+    background-color: var(--menosescuro);
+    align-items: flex-start;
+    padding-top: 3vh;
+    justify-content: center;
+}
+.p1maior{
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+.p1menor{
+    font-weight: lighter;
+    color: #fff;
+    font-size: 1.3rem;
+}
+.enaltes2{
+    margin-top: 2vh;
+}
+
+#modulos{
+    background-color: var(--menosescuro);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    color: #fff;
+    align-content: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 5vh;
+}
+.aulas{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--neutro);
+    padding-bottom: 5vh;
+}
+.aulinha{
+    width: 320px;
+    height: 320px;
+    background-color: var(--escuro);
+    margin-top: 5vh;
+    box-shadow: 0px 3px 5px #949494be;
+    display: flex;
+    flex-direction: column-reverse;
+}
+footer{
+    background-color: var(--escuro);
+    color: var(--neutro);
+    align-items: center;
+    justify-content: center;
+    height: 2.2rem;
+}
+
+header,.content,.bem_vindo, a, #conteudo2, .enalte, .imagis, #modulos, .aulas, footer{
+    display: flex;
+}
+header,.content,img,.imagis,#conteudo2,.bem_vindo,#modulos,.aulas, footer{
+    width: 100%;
+}
+.modulo1{
+    background-image: url('../images/arquivo.png');
+    background-size: cover;
+}
+.modulo2{
+    background-image: url('../images/arquivo2.png');
+    background-size: cover;
+}
+.modulo3{
+    background-image: url('../images/arquivo3.png');
+    background-size: cover;
+}
+.linkaulas{
+    text-decoration: none;
+    color: var(--neutro);
+    width: 100%;
+    height: 3rem;
+    background-color: var(--escuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 930px){
+    .enaltes{
+        margin-top: 2vh;
+    }
+}
+@media (orientation: landscape) and (max-width: 600px){
+    .enaltes2{
+        margin-top: 2vh;
+    }
+}
+
+@media (min-width: 992px) {
+    header{
+        background-image: url('../images/PC_fundo.png');
+        background-size: cover;
+        height: 100vh;
+        align-items: flex-start;
+        justify-content: left;
+        padding-top: 20vh;
+        padding-left: 14vw;
+        font-size: 3.5rem;
+    }
+    .h2maior{
+        background-color: var(--claro);
+        height: 20rem;
+        width: 33rem;
+        padding-top: 3rem;
+        padding-left: 1.2rem;
+        text-align: left;
+        color: #fff;
+        box-shadow: 1px 5px 6px #bdbdbd;
+    }
+    .bem_vindo{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    p{
+        line-height: 103%;
+    }
+    .p1menor,.p1maior{
+        display: block;
+    }
+    .p1maior{
+        margin-top: 2vh;
+    }
+    .p1menor{
+        margin-top: 5vh;
+        line-height: 1.6rem;
+    }
+    #modulos{
+        font-size: 3.7rem;
+    }
+}
